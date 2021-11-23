@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap">
+
+    <title>Calculator-JS</title>
+</head>
+<body>
+ 
+<div class="calcuBody">
+<div class="displaykeys">
+    <input type="text" id="display" value="" maxlength="11" placeholder="0">
+</div>
+
+<div class="presskeys">
+    <button id="math2" value="AC" onclick="clearDisplay()">AC</button>
+    <button id="math2" value="posneg" onclick="opPress(this.value)">+/-</button>
+    <button id="math2" value="percent" onclick=" opPress(this.value)">%</button>
+    <button id="math" value="/" onclick="opPress(this.value)">÷</button>
+
+    <button value="7" id="btn" onclick="numButton(this.value)">7</button>
+    <button value="8" id="btn" onclick="numButton(this.value)">8</button>
+    <button value="9" id="btn" onclick="numButton(this.value)">9</button>
+
+    <button id="math" value="*" onclick="opPress(this.value)">×</button>
+
+    <button value="4" id="btn" onclick="numButton(this.value)">4</button>
+    <button value="5" id="btn" onclick="numButton(this.value)">5</button>
+    <button value="6" id="btn" onclick="numButton(this.value)">6</button>
+
+    <button id="math" value="-" onclick="opPress(this.value)">-</button>
+
+    <button value="1" id="btn" onclick="numButton(this.value)">1</button>
+    <button value="2" id="btn" onclick="numButton(this.value)">2</button>
+    <button value="3" id="btn" onclick="numButton(this.value)">3</button>
+
+    <button id="math" value="+" onclick="opPress(this.value)">+</button>
+
+    <button value="0" id="btn0" onclick="numButton(this.value)">0</button>
+
+    <button value="." id="btn" onclick="numButton(this.value)">.</button>
+    <button id="math" onclick="operate()">=</button>
+    
+</div>
+</div>
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

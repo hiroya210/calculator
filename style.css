@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 70px;
+}
+
+
+input { 
+    text-align: right; 
+    height: 60px;
+    width: 305px;
+    margin: 10px;
+    font-size: 3.3em;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    font-family: 'Heebo', sans-serif;
+    box-sizing: border-box;
+    
+}
+input:focus,input:hover{
+    outline: none;
+}
+input[type = text]{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+button{
+    font-size: 1.8em;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(51,51,51);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(172, 172, 192);
+}
+.presskeys{
+    display: grid;
+    grid-template-columns: repeat(4, 4em);
+    grid-template-rows: repeat(5, 4em);
+    grid-gap: 0.5em;;
+    justify-content: center;
+    align-content: center;
+}
+#btn0{
+    grid-column: 1/ span 2;
+    border-radius: 40px;
+    
+}
+.displaykeys{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#math{
+    background-color: rgb(255,159,9);
+    font-size: 37px;
+}
+#math:hover{
+    background-color: white;
+    color:rgb(255,159,9);
+}
+#math2{
+    background-color: rgb(165,165,165);
+    color: black;
+    font-size: 1.5em;
+}
+
+#math2:hover{
+    background-color: white;
+}
